@@ -1,11 +1,13 @@
-﻿namespace UFV_Conversor;
+﻿using UFV_Conversor;
+
+namespace UFV_Conversor;
 
 public partial class App : Application
 {
-	public App()
-	{
-		InitializeComponent();
+    public App()
+    {
+        InitializeComponent();
 
-		MainPage = new AppShell();
-	}
+        MainPage = new AppShell();
+    }
 }

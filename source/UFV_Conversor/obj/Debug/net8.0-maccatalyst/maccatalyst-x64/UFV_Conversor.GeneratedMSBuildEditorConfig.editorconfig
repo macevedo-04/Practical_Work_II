@@ -28,11 +28,35 @@ build_metadata.AdditionalFiles.ManifestResourceName = UFV_Conversor.AppShell.xam
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[D:/Documentos/Universidad/2o/OOP/practical_work_ii_oop/Practical_Work_II/source/UFV_Conversor/ConversorPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UFV_Conversor.ConversorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ConversorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ConversorPage.xaml
+
+[D:/Documentos/Universidad/2o/OOP/practical_work_ii_oop/Practical_Work_II/source/UFV_Conversor/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UFV_Conversor.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
 [D:/Documentos/Universidad/2o/OOP/practical_work_ii_oop/Practical_Work_II/source/UFV_Conversor/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = UFV_Conversor.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/Documentos/Universidad/2o/OOP/practical_work_ii_oop/Practical_Work_II/source/UFV_Conversor/PasswordRecoveryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UFV_Conversor.PasswordRecoveryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = PasswordRecoveryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = PasswordRecoveryPage.xaml
+
+[D:/Documentos/Universidad/2o/OOP/practical_work_ii_oop/Practical_Work_II/source/UFV_Conversor/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UFV_Conversor.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RegisterPage.xaml
 
 [D:/Documentos/Universidad/2o/OOP/practical_work_ii_oop/Practical_Work_II/source/UFV_Conversor/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -45,3 +69,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = UFV_Conversor.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Documentos/Universidad/2o/OOP/practical_work_ii_oop/Practical_Work_II/source/UFV_Conversor/UserInfoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = UFV_Conversor.UserInfoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UserInfoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UserInfoPage.xaml

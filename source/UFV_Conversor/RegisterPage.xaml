@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UFV_Conversor.RegisterPage"
+             Title="Register"
+             BackgroundColor="#D3D3D3">
+    
+    <VerticalStackLayout>
+        <BoxView HeightRequest="60" BackgroundColor="#3B5A76" />
+        <Label Text="OOP Conversor" FontSize="28" TextColor="White" HorizontalOptions="Center" Margin="0,-50,0,30" />
+
+        <Label Text="Username" FontSize="18" Margin="30,0" />
+        <Entry Placeholder="Enter your username" Margin="30,0" />
+
+        <Label Text="Password" FontSize="18" Margin="30,10,30,0" />
+        <Entry Placeholder="Enter your password" IsPassword="True" Margin="30,0" />
+
+        <Label Text="Confirm Password" FontSize="18" Margin="30,10,30,0" />
+        <Entry Placeholder="Re-enter your password" IsPassword="True" Margin="30,0" />
+
+        <Button Text="REGISTER"
+                BackgroundColor="Gray"
+                TextColor="White"
+                Margin="30,20"
+                Clicked="OnRegisterClicked" />
+    </VerticalStackLayout>
+</ContentPage>
