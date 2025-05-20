@@ -1,3 +1,4 @@
+using Microsoft.Maui.Controls;
 namespace UFV_Conversor;
 
 public partial class LoginPage : ContentPage
@@ -20,5 +21,10 @@ public partial class LoginPage : ContentPage
     private async void OnForgotPasswordClicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync(nameof(PasswordRecoveryPage));
+    }
+
+    private void OnExitClicked(object sender, EventArgs e)
+    {
+        Application.Current.Quit();
     }
 }

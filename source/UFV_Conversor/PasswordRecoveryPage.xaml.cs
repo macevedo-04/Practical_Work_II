@@ -16,4 +16,14 @@ public partial class PasswordRecoveryPage : ContentPage
     {
         await Shell.Current.GoToAsync(nameof(LoginPage));
     }
+
+    private async void OnForgotPasswordClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(PasswordRecoveryPage));
+    }
+
+    private void OnExitClicked(object sender, EventArgs e)
+    {
+        Application.Current.Quit();
+    }
 }

@@ -4,24 +4,76 @@
              x:Class="UFV_Conversor.RegisterPage"
              Title="Register"
              BackgroundColor="#D3D3D3">
-    
+
     <VerticalStackLayout>
-        <BoxView HeightRequest="60" BackgroundColor="#3B5A76" />
-        <Label Text="OOP Conversor" FontSize="28" TextColor="White" HorizontalOptions="Center" Margin="0,-50,0,30" />
+        <Button x:Name="ExitButton"
+                Text="Exit"
+                Background="Transparent"
+                BackgroundColor="#ffffff"
+                TextColor="#000000"
+                HorizontalOptions="End"
+                Clicked="OnExitClicked"/>
 
-        <Label Text="Username" FontSize="18" Margin="30,0" />
-        <Entry Placeholder="Enter your username" Margin="30,0" />
+        <BoxView HeightRequest="60"
+                BackgroundColor="#3B5A76"/>
+        <Label Text="OOP Conversor"
+                FontSize="28"
+                TextColor="White"
+                HorizontalOptions="Center"
+                Margin="0,-50,0,30"/>
 
-        <Label Text="Password" FontSize="18" Margin="30,10,30,0" />
-        <Entry Placeholder="Enter your password" IsPassword="True" Margin="30,0" />
+        <Label Text="Name"
+                FontSize="18"
+                Margin="30,0"
+                TextColor="Black"/>
+        <Entry Placeholder="Enter your username"
+                Margin="30,10"
+                TextColor="Black"
+                BackgroundColor="White"/>
 
-        <Label Text="Confirm Password" FontSize="18" Margin="30,10,30,0" />
-        <Entry Placeholder="Re-enter your password" IsPassword="True" Margin="30,0" />
+        <Label Text="Username"
+                FontSize="18"
+                Margin="30,0"
+                TextColor="Black"/>
+        <Entry Placeholder="Enter your username"
+                Margin="30,10"
+                TextColor="Black"
+                BackgroundColor="White"/>
+
+        <Label Text="Email"
+                FontSize="18"
+                Margin="30,0"
+                TextColor="Black"/>
+        <Entry Placeholder="Enter your email"
+                Margin="30,10"
+                TextColor="Black"
+                BackgroundColor="White"/>
+
+        <Label Text="Password"
+                FontSize="18"
+                Margin="30,10,30,0"
+                TextColor="Black"/>
+        <Entry Placeholder="Enter your password"
+                IsPassword="True"
+                Margin="30,10"
+                TextColor="Black"
+                BackgroundColor="White"/>
+
+        <Label Text="Confirm Password"
+                FontSize="18"
+                Margin="30,10,30,0"
+                TextColor="Black"/>
+        <Entry Placeholder="Repeat your password"
+                IsPassword="True"
+                Margin="30,10"
+                TextColor="Black"
+                BackgroundColor="White"/>
 
         <Button Text="REGISTER"
-                BackgroundColor="Gray"
+                BackgroundColor="#FF3593FF"
                 TextColor="White"
                 Margin="30,20"
-                Clicked="OnRegisterClicked" />
+                WidthRequest="200"
+                Clicked="OnRegisterClicked"/>
     </VerticalStackLayout>
 </ContentPage>

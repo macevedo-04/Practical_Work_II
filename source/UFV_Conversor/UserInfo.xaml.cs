@@ -7,5 +7,9 @@ namespace UFV_Conversor
             InitializeComponent();
         }
 
+        private void OnExitClicked(object sender, EventArgs e)
+        {
+            Application.Current.Quit();
+        }
     }
 }
