@@ -26,8 +26,9 @@
                 FontSize="18"
                 Margin="30,0"
                 TextColor="Black"/>
-        <Entry Placeholder="Enter your username"
-                Margin="30,10"
+        <Entry  x:Name="NameEntry"
+                Placeholder="Enter your username"
+                Margin="30,5"
                 TextColor="Black"
                 BackgroundColor="White"/>
 
@@ -35,8 +36,9 @@
                 FontSize="18"
                 Margin="30,0"
                 TextColor="Black"/>
-        <Entry Placeholder="Enter your username"
-                Margin="30,10"
+        <Entry  x:Name="UsernameEntry"
+                Placeholder="Enter your username"
+                Margin="30,5"
                 TextColor="Black"
                 BackgroundColor="White"/>
 
@@ -44,8 +46,9 @@
                 FontSize="18"
                 Margin="30,0"
                 TextColor="Black"/>
-        <Entry Placeholder="Enter your email"
-                Margin="30,10"
+        <Entry  x:Name="EmailEntry"
+                Placeholder="Enter your email"
+                Margin="30,5"
                 TextColor="Black"
                 BackgroundColor="White"/>
 
@@ -53,9 +56,10 @@
                 FontSize="18"
                 Margin="30,10,30,0"
                 TextColor="Black"/>
-        <Entry Placeholder="Enter your password"
+        <Entry  x:Name="PasswordEntry"
+                Placeholder="Enter your password"
                 IsPassword="True"
-                Margin="30,10"
+                Margin="30,5"
                 TextColor="Black"
                 BackgroundColor="White"/>
 
@@ -63,14 +67,26 @@
                 FontSize="18"
                 Margin="30,10,30,0"
                 TextColor="Black"/>
-        <Entry Placeholder="Repeat your password"
+        <Entry  x:Name="ConfirmPasswordEntry"
+                Placeholder="Repeat your password"
                 IsPassword="True"
-                Margin="30,10"
+                Margin="30,5"
                 TextColor="Black"
                 BackgroundColor="White"/>
 
+        <HorizontalStackLayout>
+                <CheckBox x:Name="TermsCheckBox"
+                          Margin="30,0,0,0"
+                          VerticalOptions="Center"/>
+                <Label  Text="I accept terms of use and privacy policy"
+                        FontSize="12"
+                        TextColor="Black"
+                        VerticalOptions="Center"
+                        Margin="5,0,0,0"/>
+        </HorizontalStackLayout>
+
         <Button Text="REGISTER"
-                BackgroundColor="#FF3593FF"
+                BackgroundColor="#005cc8"
                 TextColor="White"
                 Margin="30,20"
                 WidthRequest="200"

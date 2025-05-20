@@ -27,7 +27,8 @@
                        FontSize="18"
                        Margin="30,0"
                        TextColor="Black"/>
-                <Entry Placeholder="Enter your username"
+                <Entry x:Name="UsernameEntry"
+                       Placeholder="Enter your username"
                        Margin="30,0"
                        TextColor="Black"
                        BackgroundColor="White"/>
@@ -36,7 +37,8 @@
                        FontSize="18"
                        Margin="30,10,30,0"
                        TextColor="Black"/>
-                <Entry Placeholder="Enter your password"
+                <Entry x:Name="PasswordEntry"
+                       Placeholder="Enter your password"
                        IsPassword="True"
                        Margin="30,0"
                        TextColor="Black"

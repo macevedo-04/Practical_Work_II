@@ -12,12 +12,12 @@
                                         Text="Operations"
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
-                                        Clicked="OnExitClicked"/>
+                                        Clicked="OnOperationsClicked"/>
                                 <Button x:Name="LogOutButton"
                                         Text="LogOut"
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
-                                        Clicked="OnExitClicked"/>
+                                        Clicked="OnLogOutClicked"/>
                                 <Button x:Name="ExitButton"
                                         Text="Exit"
                                         BackgroundColor="Transparent"
@@ -31,7 +31,15 @@
                                 FontSize="28"
                                 TextColor="White"
                                 HorizontalOptions="Center"
-                                Margin="0,-50,0,30"/>
+                                Margin="0,-50,0,20"/>
+
+                        <Label x:Name="OutputLabel"
+                        FontSize="20"
+                        Margin="5,0,5,5"
+                        TextColor="#313131"
+                        LineBreakMode="TailTruncation"
+                        HorizontalTextAlignment="End"
+                        VerticalOptions="Start"/>
 
                         <Entry  x:Name="InputEntry"
                                 FontSize="20"
@@ -40,14 +48,6 @@
                                 HorizontalTextAlignment="End"
                                 TextColor="Black"
                                 BackgroundColor="White"/>
-
-                        <Label x:Name="OutputLabel"
-                        FontSize="14"
-                        Margin="5,0,5,5"
-                        TextColor="#313131"
-                        LineBreakMode="TailTruncation"
-                        HorizontalTextAlignment="End"
-                        VerticalOptions="Start"/>
 
                         <Grid ColumnSpacing="10"
                               RowSpacing="10"

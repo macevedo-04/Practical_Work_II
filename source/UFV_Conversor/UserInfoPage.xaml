@@ -2,23 +2,60 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UFV_Conversor.UserInfoPage"
+             Title="User Information"
              BackgroundColor="#D3D3D3">
 
     <VerticalStackLayout>
-        <Button x:Name="ExitButton"
-                Text="Exit"
-                Background="Transparent"
-                BackgroundColor="#ffffff"
-                TextColor="#000000"
-                HorizontalOptions="End"
-                Clicked="OnExitClicked"/>
-        <BoxView HeightRequest="60"
-                 BackgroundColor="#3B5A76"/>
-        <Label  Text="OOP Conversor"
-                FontSize="28"
-                TextColor="White"
-                HorizontalOptions="Center"
-                Margin="0,-50,0,30"/>
+       <HorizontalStackLayout HorizontalOptions="End">
+              <Button x:Name="LogOutButton"
+                     Text="LogOut"
+                     BackgroundColor="Transparent"
+                     TextColor="Black"
+                     Clicked="OnLogOutClicked"/>
+              <Button x:Name="ExitButton"
+                     Text="Exit"
+                     BackgroundColor="Transparent"
+                     TextColor="Black"
+                     Clicked="OnExitClicked"/>
+       </HorizontalStackLayout>
+
+       <BoxView HeightRequest="60"
+              BackgroundColor="#3B5A76"/>
+       <Label  Text="OOP Conversor"
+              FontSize="28"
+              TextColor="White"
+              HorizontalOptions="Center"
+              Margin="0,-50,0,30"/>
+       
+       <Label x:Name="NameLabel"
+              Text="Name: "
+              FontSize="18"
+              Margin="30,0"
+              TextColor="Black"/>
+       
+       <Label x:Name="UsernameLabel"
+              Text="Username: "
+              FontSize="18"
+              Margin="30,0"
+              TextColor="Black"/>
+
+       <Label x:Name="EmailLabel"
+              Text="Email: "
+              FontSize="18"
+              Margin="30,0"
+              TextColor="Black"/>
+
+       <Label x:Name="PasswordLabel"
+              Text="Password: "
+              FontSize="18"
+              Margin="30,0"
+              TextColor="Black"/>
+
+       <Label x:Name="NumOperationsLabel"
+              Text="Number of operations: "
+              FontSize="18"
+              Margin="30,0"
+              TextColor="Black"/>
 
     </VerticalStackLayout>
 </ContentPage>
