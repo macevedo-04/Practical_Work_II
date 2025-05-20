@@ -301,6 +301,7 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
 
     private async void OnLogOutClicked(object sender, EventArgs e)
     {
+        this.currentUsername = "";
         await Shell.Current.GoToAsync(nameof(LoginPage));
     }
 

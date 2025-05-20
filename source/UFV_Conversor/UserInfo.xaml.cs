@@ -39,6 +39,7 @@ public partial class UserInfoPage : ContentPage, IQueryAttributable
 
     private async void OnLogOutClicked(object sender, EventArgs e)
     {
+        this.currentUsername = "";
         await Shell.Current.GoToAsync(nameof(LoginPage));
     }
 
