@@ -33,6 +33,7 @@ The report includes a detailed UML class diagram that visually represents the ap
 Additionally, this document outlines several key design decisions made during the development process, explaining the rationale behind them and how they contributed to the overall functionality and maintainability of the application. It also addresses a number of challenges and technical issues encountered during implementation, as well as the strategies employed to overcome them.
 
 Finally, the report concludes with a brief reflection on the development experience, summarising the main lessons learned and offering potential directions for future improvements or extensions of the application.
+
 ---
 
 ## Description
