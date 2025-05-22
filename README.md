@@ -46,16 +46,21 @@ The application architecture is organised into three distinct layers, each with 
 - **Persistence Layer:** CSV file (`users.csv`), which holds user credentials and operation counts.
 
 ### App's Pages
-- **LoginPage**
-![](./README_Pictures/Login.png)
-- **RegisterPage**
-![](./README_Pictures/Register.png)
-- **PasswordRecoveryPage**
-![](./README_Pictures/PasswdRecovery.png)
-- **ConversorPage**
-![](./README_Pictures/Conversor.png)
-- **UserInfoPage**
-![](./README_Pictures/UserInfo.png)
+
+* **LoginPage**
+  ![](./README_Pictures/Login.png)
+
+* **RegisterPage**
+  ![](./README_Pictures/Register.png)
+
+* **PasswordRecoveryPage**
+  ![](./README_Pictures/PasswdRecovery.png)
+
+* **ConversorPage**
+  ![](./README_Pictures/Conversor.png)
+
+* **UserInfoPage**
+  ![](./README_Pictures/UserInfo.png)
 
 ### Class Diagram
 
