@@ -4,13 +4,12 @@ namespace UFV_Conversor
 {
     public class User
     {
-        public string name;
-        public string username;
-        public string email;
-        public string password;
-        public int numOperations;
+        private string name;
+        private string username;
+        private string email;
+        private string password;
+        private int numOperations;
 
-        // Constructor with parameters
         public User(string name, string username, string email, string password)
         {
             this.name = name;
