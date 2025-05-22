@@ -101,8 +101,15 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
             try {
                 DecimalInputValidator validator = new DecimalInputValidator();
                 validator.Validate(InputEntry.Text);
+                int bits = 0;
+                string bitsInput;
+                do {
+                    bitsInput = await DisplayPromptAsync("Bits", "How many bits should I use?", "OK", "Cancel", "Enter number of bits", 3, Keyboard.Numeric);
+                    if (bitsInput == null)
+                        return;
+                } while (bitsInput == "" || !int.TryParse(bitsInput, out bits) || bits <= 0);
                 DecimalToBinary converter = new DecimalToBinary("Binary", "Decimal to Binary");
-                string binaryNumber = converter.Change(InputEntry.Text);
+                string binaryNumber = converter.Change(InputEntry.Text, bits);
                 OutputLabel.Text = binaryNumber;
                 IncrementNumOperations();
             }
@@ -126,8 +133,15 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
             try {
                 DecimalInputValidator validator = new DecimalInputValidator();
                 validator.Validate(InputEntry.Text);
+                int bits = 0;
+                string bitsInput;
+                do {
+                    bitsInput = await DisplayPromptAsync("Bits", "How many bits should I use?", "OK", "Cancel", "Enter number of bits", 3, Keyboard.Numeric);
+                    if (bitsInput == null)
+                        return;
+                } while (bitsInput == "" || !int.TryParse(bitsInput, out bits) || bits <= 0);
                 DecimalToTwosComplement converter = new DecimalToTwosComplement("Two's Complement", "Decimal to Two's Complement");
-                string twoCompNumber = converter.Change(InputEntry.Text);
+                string twoCompNumber = converter.Change(InputEntry.Text, bits);
                 OutputLabel.Text = twoCompNumber;
                 IncrementNumOperations();
             }

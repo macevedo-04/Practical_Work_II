@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UFV_Conversor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+34340ddabf8129ac1580328a1110182e0d1d33ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3d0ad4d8b67efe1097ee1156078ca4fda18d80ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("UFV_Conversor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UFV_Conversor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
