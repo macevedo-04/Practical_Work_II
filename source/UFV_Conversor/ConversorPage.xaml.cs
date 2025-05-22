@@ -50,7 +50,7 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
         ButtonHexToDec.Clicked += ButtonHexToDec_Clicked;
     }
 
-    public void IncrementNumOperations()
+    private void IncrementNumOperations()
     {
         string filePath = "files/users.csv";
         if (File.Exists(filePath)) {
@@ -99,8 +99,6 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
         if (!string.IsNullOrEmpty(InputEntry.Text)) {
             OutputLabel.Text = "";
             try {
-                DecimalInputValidator validator = new DecimalInputValidator();
-                validator.Validate(InputEntry.Text);
                 int bits = 0;
                 string bitsInput;
                 do {
@@ -109,6 +107,7 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
                         return;
                 } while (bitsInput == "" || !int.TryParse(bitsInput, out bits) || bits <= 0);
                 DecimalToBinary converter = new DecimalToBinary("Binary", "Decimal to Binary");
+                converter.Validate(InputEntry.Text);
                 string binaryNumber = converter.Change(InputEntry.Text, bits);
                 OutputLabel.Text = binaryNumber;
                 IncrementNumOperations();
@@ -131,8 +130,6 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
         if (!string.IsNullOrEmpty(InputEntry.Text)) {
             OutputLabel.Text = "";
             try {
-                DecimalInputValidator validator = new DecimalInputValidator();
-                validator.Validate(InputEntry.Text);
                 int bits = 0;
                 string bitsInput;
                 do {
@@ -141,6 +138,7 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
                         return;
                 } while (bitsInput == "" || !int.TryParse(bitsInput, out bits) || bits <= 0);
                 DecimalToTwosComplement converter = new DecimalToTwosComplement("Two's Complement", "Decimal to Two's Complement");
+                converter.Validate(InputEntry.Text);
                 string twoCompNumber = converter.Change(InputEntry.Text, bits);
                 OutputLabel.Text = twoCompNumber;
                 IncrementNumOperations();
@@ -163,9 +161,8 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
         if (!string.IsNullOrEmpty(InputEntry.Text)) {
             OutputLabel.Text = "";
             try {
-                DecimalInputValidator validator = new DecimalInputValidator();
-                validator.Validate(InputEntry.Text);
                 DecimalToOctal converter = new DecimalToOctal("Octal", "Decimal to Octal");
+                converter.Validate(InputEntry.Text);
                 string octalNumber = converter.Change(InputEntry.Text);
                 OutputLabel.Text = octalNumber;
                 IncrementNumOperations();
@@ -188,9 +185,8 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
         if (!string.IsNullOrEmpty(InputEntry.Text)) {
             OutputLabel.Text = "";
             try {
-                BinaryInputValidator validator = new BinaryInputValidator();
-                validator.Validate(InputEntry.Text);
                 TwosComplementToDecimal converter = new TwosComplementToDecimal("Decimal", "Two's Complement to Decimal");
+                converter.Validate(InputEntry.Text);
                 string decimalNumber = converter.Change(InputEntry.Text);
                 OutputLabel.Text = decimalNumber;
                 IncrementNumOperations();
@@ -213,9 +209,8 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
         if (!string.IsNullOrEmpty(InputEntry.Text)) {
             OutputLabel.Text = "";
             try {
-                DecimalInputValidator validator = new DecimalInputValidator();
-                validator.Validate(InputEntry.Text);
                 DecimalToHexadecimal converter = new DecimalToHexadecimal("Hexadecimal", "Decimal to Hexadecimal");
+                converter.Validate(InputEntry.Text);
                 string hexNumber = converter.Change(InputEntry.Text);
                 OutputLabel.Text = hexNumber;
                 IncrementNumOperations();
@@ -238,9 +233,8 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
         if (!string.IsNullOrEmpty(InputEntry.Text)) {
             OutputLabel.Text = "";
             try {
-                BinaryInputValidator validator = new BinaryInputValidator();
-                validator.Validate(InputEntry.Text);
                 BinaryToDecimal converter = new BinaryToDecimal("Decimal", "Binary to Decimal");
+                converter.Validate(InputEntry.Text);
                 string decimalNumber = converter.Change(InputEntry.Text);
                 OutputLabel.Text = decimalNumber;
                 IncrementNumOperations();
@@ -263,9 +257,8 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
         if (!string.IsNullOrEmpty(InputEntry.Text)) {
             OutputLabel.Text = "";
             try {
-                OctalInputValidator validator = new OctalInputValidator();
-                validator.Validate(InputEntry.Text);
                 OctalToDecimal converter = new OctalToDecimal("Decimal", "Octal to Decimal");
+                converter.Validate(InputEntry.Text);
                 string decimalNumber = converter.Change(InputEntry.Text);
                 OutputLabel.Text = decimalNumber;
                 IncrementNumOperations();
@@ -288,9 +281,8 @@ public partial class ConversorPage : ContentPage, IQueryAttributable
         if (!string.IsNullOrEmpty(InputEntry.Text)) {
             OutputLabel.Text = "";
             try {
-                HexadecimalInputValidator validator = new HexadecimalInputValidator();
-                validator.Validate(InputEntry.Text);
                 HexadecimalToDecimal converter = new HexadecimalToDecimal("Decimal", "Hexadecimal to Decimal");
+                converter.Validate(InputEntry.Text);
                 string decimalNumber = converter.Change(InputEntry.Text);
                 OutputLabel.Text = decimalNumber;
                 IncrementNumOperations();

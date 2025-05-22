@@ -4,8 +4,8 @@
 
 1. [Introduction](#introduction)
 2. [Description](#description)
-   - [Architecture Overview](#architecture-overview)
    - [Class Diagram](#class-diagram)
+   - [Main Components](#main-components)
    - [Key Classes and Responsibilities](#key-classes-and-responsibilities)
    - [Design and Development Decisions](#design-and-development-decisions)
 3. [Problems](#problems)
@@ -21,10 +21,6 @@ This document provides a detailed design overview of the "UFV Conversor" applica
 
 ## Description
 
-### Architecture Overview
-
-The application is a cross-platform .NET MAUI app that allows users to convert numbers between different bases (decimal, binary, octal, hexadecimal, and two's complement). It features user authentication, operation tracking, and a modular design for easy extension.
-
 #### Main Components
 
 - **UI Layer:** XAML pages (e.g., `ConversorPage.xaml`) for user interaction.
@@ -33,60 +29,7 @@ The application is a cross-platform .NET MAUI app that allows users to convert n
 
 ### Class Diagram
 
-```mermaid
-classDiagram
-    class ConversorPage {
-        - string currentUsername
-        + IncrementNumOperations()
-        + Button*Clicked()
-    }
-    class Converter {
-        - List~Conversion~ operations
-        + Converter()
-        + Exit()
-    }
-    class Conversion {
-        - string name
-        - string definition
-        - bool bitSize
-        - InputValidator validator
-        + Change(input)
-        + Change(input, bits)
-        + Validate(input)
-        + GetName()
-        + GetDefinition()
-        + NeedBitSize()
-    }
-    class DecimalToBinary
-    class DecimalToOctal
-    class DecimalToHexadecimal
-    class DecimalToTwosComplement
-    class BinaryToDecimal
-    class TwosComplementToDecimal
-    class OctalToDecimal
-    class HexadecimalToDecimal
-    class InputValidator
-    class DecimalInputValidator
-    class BinaryInputValidator
-    class OctalInputValidator
-    class HexadecimalInputValidator
 
-    ConversorPage --> Converter
-    Converter --> Conversion
-    Conversion <|-- DecimalToBinary
-    Conversion <|-- DecimalToOctal
-    Conversion <|-- DecimalToHexadecimal
-    Conversion <|-- DecimalToTwosComplement
-    Conversion <|-- BinaryToDecimal
-    Conversion <|-- TwosComplementToDecimal
-    Conversion <|-- OctalToDecimal
-    Conversion <|-- HexadecimalToDecimal
-    Conversion --> InputValidator
-    InputValidator <|-- DecimalInputValidator
-    InputValidator <|-- BinaryInputValidator
-    InputValidator <|-- OctalInputValidator
-    InputValidator <|-- HexadecimalInputValidator
-```
 
 ### Key Classes and Responsibilities
 
