@@ -47,19 +47,19 @@ The application architecture is organised into three distinct layers, each with 
 
 ### App's Pages
 
-* **LoginPage**
+* **LoginPage**\
   ![](./README_Pictures/Login.png)
 
-* **RegisterPage**
+* **RegisterPage**\
   ![](./README_Pictures/Register.png)
 
-* **PasswordRecoveryPage**
+* **PasswordRecoveryPage**\
   ![](./README_Pictures/PasswdRecovery.png)
 
-* **ConversorPage**
+* **ConversorPage**\
   ![](./README_Pictures/Conversor.png)
 
-* **UserInfoPage**
+* **UserInfoPage**\
   ![](./README_Pictures/UserInfo.png)
 
 ### Class Diagram
