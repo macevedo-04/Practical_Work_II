@@ -95,6 +95,7 @@ The application architecture is organised into three distinct layers, each with 
 - **UI Responsiveness:** Implementing asynchronous behaviour to keep the UI responsive during validation and processing posed difficulties (since it was the first time encountering asynchronous methods), especially avoiding UI thread blocking.
 - **Classes and methods to use:** Discerning which class was needed in order to correctly perform the conversion proved to be challenging, and finding how to implement the logic for validation took some time.
 - **PasswordRecoveryPage:** I was told later on, that this page was not mandatory, but since I had already implemented it, I left it as is. 
+- **MAUI in VSCode:** The countless errors throughout the process made this practice slightly tiring, apart from the fact that debugging the project still causes some problems, as sometimes it executes and shows the program, and others the program exits by itself. I assumed it was because of the buffer, but still didn't know how to dolve that problem. This is why debugging and running the application usually takes various tries before being able to visualize the app pages. 
 
 ---
 
