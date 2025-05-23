@@ -75,6 +75,8 @@ The application architecture is organised into three distinct layers, each with 
 - **[Specific Conversion Classes]:** Includes `DecimalToBinary`, `DecimalToOctal`, `DecimalToHexadecimal`, `DecimalToTwosComplement`, `BinaryToDecimal`, `TwosComplementToDecimal`, `OctalToDecimal` and `HexadecimalToDecimal`, which implement the logic for converting between specific number systems by overriding the `Change` method.
 - **InputValidator (abstract):** Provides the base structure for validating user input across various number formats.
 - **[Specific Validator Classes]:** Includes `DecimalInputValidator`, `BinaryInputValidator`, `OctalInputValidator` and `HexadecimalInputValidator`, which implement format-specific validation logic ensuring correctness before processing the inputs.
+- **PasswordRecoveryPage:** This page is in charge of changing a user's password if they have forgotten it. It directly handles the CSV file. 
+- **UserInfo:** This page displays the current user's information (i.e. Name, Username, Email, Password and Number of Operations performed).
 
 ### Design and Development Decisions
 
@@ -92,6 +94,8 @@ The application architecture is organised into three distinct layers, each with 
 - **Input Validation:** Ensuring robust handling of various numeric formats and edge cases (e.g. negative binary values, overflow) required detailed logic and testing.
 - **UI Responsiveness:** Implementing asynchronous behaviour to keep the UI responsive during validation and processing posed difficulties (since it was the first time encountering asynchronous methods), especially avoiding UI thread blocking.
 - **Classes and methods to use:** Discerning which class was needed in order to correctly perform the conversion proved to be challenging, and finding how to implement the logic for validation took some time.
+- **PasswordRecoveryPage:** I was told later on, that this page was not mandatory, but since I had already implemented it, I left it as is. 
+
 ---
 
 ## Conclusions
